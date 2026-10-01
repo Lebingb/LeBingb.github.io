@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrionDrift Esports | Past and Future</title>
+    <link rel="icon" type="image/x-icon" href="orionicon.png">
+    <style>
+        /* Modern Esports Design Variables */
+        :root {
+            --bg-dark: #0b0c10;
+            --bg-card: #1f2833;
+            --primary-glow: #66fcf1;
+            --secondary-glow: #45a29e;
+            --text-main: #ffffff;
+            --text-muted: #c5c6c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: rgba(11, 12, 16, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(102, 252, 241, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--primary-glow);
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-glow);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #1f2833 0%, #0b0c10 100%);
+            border-bottom: 2px solid rgba(102, 252, 241, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(102, 252, 241, 0.4);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 35px;
+            background: transparent;
+            color: var(--primary-glow);
+            border: 2px solid var(--primary-glow);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--primary-glow);
+            color: var(--bg-dark);
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        /* Content Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary-glow);
+            margin: 10px auto 0;
+        }
+
+        /* Grid Layout for History & Future */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            padding: 40px 30px;
+            border-radius: 4px;
+            border-left: 4px solid var(--secondary-glow);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-left-color: var(--primary-glow);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-glow);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #050508;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+       <img src="orionicon.png" alt="Orion Drift" width= "50" height= "50"> 
+       <div class="logo">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤOrionDrift Esports | Past and Future</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#past">The Orion Legacy</a></li>
+            <li><a href="#future">The Horizon</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <img src="OrionComp.webp" alt="Orion Comp Icon" width= "400" height= "300">
+        <h1>OrionDrift Esports</h1>
+        <p>Navigating the competitive cosmos. Forging champions from the drift.</p>
+        <button class="btn">View ODC Rosters</button>
+        <p>Takes you to the ODC website</p>
+        <button class="btn">View VRML Rosters</button>
+        <p>Takes you to the VRML website</p>
+    </div>
+
+    <!-- Past Section -->
+    <section class="container" id="past">
+        <h2>OrionDrifts Past Achievements</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>2024: Genesis</h3>
+                <p>OrionDrift was founded by a collective of elite grassroots players. In our debut season, we secured a top-4 finish in the regional Challenger Series, establishing our presence in the competitive scene.</p>
+            </div>
+            <div class="card">
+                <h3>2025: Breaking Barriers</h3>
+                <p>Expanded into multi-titled rosters. Our flagship squad claimed victory at the Apex Winter Invitational, marking OrionDrift's first major trophy and solidifying our status as a Tier-1 contender.</p>
+            </div>
+            <div class="card">
+                <h3>Community Milestones</h3>
+                <p>Beyond competitive accolades, we successfully launched our digital academy program, mentoring over 500 aspiring competitive gamers and building a loyal, global fan base.</p>
+            </div>
+        </div>
+    </section>
+
+    <img src="orionealogo.webp" alt="Orion EA">
+
+    <!-- Future Section -->
+    <section class="container" id="future" style="background-color: rgba(31, 40, 51, 0.2);">
+        <h2>The Future Roadmap</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Global Expansion</h3>
+                <p>We are actively scouting world-class talent to establish permanent divisions in Europe and Asia, positioning OrionDrift to compete consistently on the international stage.</p>
+            </div>
+            <div class="card">
+                <h3>Next-Gen Training Facility</h3>
+                <p>Construction begins soon on the OrionHQ gaming facility—a state-of-the-art complex featuring dedicated scrim rooms, physical therapy lounges, and content production studios.</p>
+            </div>
+            <div class="card">
+                <h3>Web & Fan Ownership</h3>
+                <p>Launching an interactive fan engagement portal to give our community direct influence over team merchandise designs, exclusive content drops, and community events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p> 2026 OrionDrift Esports. All Rights Reserved.</p>
+    <p>Website made by LeBing.</p>
+    </footer>
+
+</body>
+</html>
